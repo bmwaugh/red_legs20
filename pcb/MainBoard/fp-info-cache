@@ -1,4 +1,4 @@
-16936799299170866
+16933637793796866
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -50266,20 +50266,6 @@ solder jumper open
 0
 5
 3
-Kicad
-QFP50P1600X1600X160-100N
-
-
-0
-100
-100
-Kicad
-QFP50P1600X1600X160-100N (1)
-
-
-0
-100
-100
 Kicad
 STM32F103VG_LQFP100
 
