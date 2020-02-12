@@ -1,0 +1,129 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_ST_STM32F4:STM32F427VGTx U?
+U 1 1 5E409285
+P 2900 3600
+F 0 "U?" H 2900 711 50  0000 C CNN
+F 1 "STM32F427VGTx" H 2900 620 50  0000 C CNN
+F 2 "Package_QFP:LQFP-100_14x14mm_P0.5mm" H 2200 1000 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00071990.pdf" H 2900 3600 50  0001 C CNN
+	1    2900 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_B_Micro J?
+U 1 1 5E41C2E1
+P 6000 1250
+F 0 "J?" H 6057 1717 50  0000 C CNN
+F 1 "USB_B_Micro" H 6057 1626 50  0000 C CNN
+F 2 "" H 6150 1200 50  0001 C CNN
+F 3 "~" H 6150 1200 50  0001 C CNN
+	1    6000 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E42AA9D
+P 7950 1600
+F 0 "#PWR?" H 7950 1350 50  0001 C CNN
+F 1 "GND" H 7955 1427 50  0000 C CNN
+F 2 "" H 7950 1600 50  0001 C CNN
+F 3 "" H 7950 1600 50  0001 C CNN
+	1    7950 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:CAP C
+U 1 1 5E42BB79
+P 7950 1350
+F 0 "C" H 8128 1396 50  0000 L CNN
+F 1 "100uF" H 8128 1305 50  0000 L CNN
+F 2 "" H 7950 1350 50  0001 C CNN
+F 3 "~" H 7950 1350 50  0001 C CNN
+	1    7950 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:R R
+U 1 1 5E42CC35
+P 9500 2050
+F 0 "R" H 9568 2096 50  0000 L CNN
+F 1 "50 Ohm" H 9568 2005 50  0000 L CNN
+F 2 "" H 9500 2050 50  0001 C CNN
+F 3 "~" H 9500 2050 50  0001 C CNN
+F 4 "R" H 9500 2050 50  0001 C CNN "Spice_Primitive"
+F 5 "50u" H 9500 2050 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 9500 2050 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    9500 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Reference_Voltage:TLS850B0TBV33ATMA1 U?
+U 1 1 5E438E3F
+P 8650 900
+F 0 "U?" H 8825 965 50  0000 C CNN
+F 1 "TLS850B0TBV33ATMA1" H 8825 874 50  0000 C CNN
+F 2 "" H 8650 900 50  0001 C CNN
+F 3 "" H 8650 900 50  0001 C CNN
+	1    8650 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 1300 9250 1300
+Text GLabel 7800 1100 0    50   Input ~ 0
+VCC
+$Comp
+L power:GND #PWR?
+U 1 1 5E4413EE
+P 9500 2300
+F 0 "#PWR?" H 9500 2050 50  0001 C CNN
+F 1 "GND" H 9505 2127 50  0000 C CNN
+F 2 "" H 9500 2300 50  0001 C CNN
+F 3 "" H 9500 2300 50  0001 C CNN
+	1    9500 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:CAP C
+U 1 1 5E430140
+P 9500 1550
+F 0 "C" H 9678 1596 50  0000 L CNN
+F 1 "100uF" H 9678 1505 50  0000 L CNN
+F 2 "" H 9500 1550 50  0001 C CNN
+F 3 "~" H 9500 1550 50  0001 C CNN
+	1    9500 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E442F97
+P 8850 1550
+F 0 "#PWR?" H 8850 1300 50  0001 C CNN
+F 1 "GND" H 8855 1377 50  0000 C CNN
+F 2 "" H 8850 1550 50  0001 C CNN
+F 3 "" H 8850 1550 50  0001 C CNN
+	1    8850 1550
+	1    0    0    -1  
+$EndComp
+Text GLabel 8400 1300 0    50   Input ~ 0
+EN
+Wire Wire Line
+	8400 1100 7950 1100
+Wire Wire Line
+	7950 1100 7800 1100
+Connection ~ 7950 1100
+$EndSCHEMATC

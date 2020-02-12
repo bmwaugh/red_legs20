@@ -1,0 +1,377 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:USB_B_Micro J?
+U 1 1 5E41C2E1
+P 1200 1400
+F 0 "J?" H 1257 1867 50  0000 C CNN
+F 1 "USB_B_Micro" H 1257 1776 50  0000 C CNN
+F 2 "" H 1350 1350 50  0001 C CNN
+F 3 "~" H 1350 1350 50  0001 C CNN
+	1    1200 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E42AA9D
+P 7950 1600
+F 0 "#PWR?" H 7950 1350 50  0001 C CNN
+F 1 "GND" H 7955 1427 50  0000 C CNN
+F 2 "" H 7950 1600 50  0001 C CNN
+F 3 "" H 7950 1600 50  0001 C CNN
+	1    7950 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:CAP C
+U 1 1 5E42BB79
+P 7950 1350
+F 0 "C" H 8128 1396 50  0000 L CNN
+F 1 "100uF" H 8128 1305 50  0000 L CNN
+F 2 "" H 7950 1350 50  0001 C CNN
+F 3 "~" H 7950 1350 50  0001 C CNN
+	1    7950 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:R R
+U 1 1 5E42CC35
+P 9500 2050
+F 0 "R" H 9568 2096 50  0000 L CNN
+F 1 "50 Ohm" H 9568 2005 50  0000 L CNN
+F 2 "" H 9500 2050 50  0001 C CNN
+F 3 "~" H 9500 2050 50  0001 C CNN
+F 4 "R" H 9500 2050 50  0001 C CNN "Spice_Primitive"
+F 5 "50u" H 9500 2050 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 9500 2050 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    9500 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Reference_Voltage:TLS850B0TBV33ATMA1 U?
+U 1 1 5E438E3F
+P 8650 900
+F 0 "U?" H 8825 965 50  0000 C CNN
+F 1 "TLS850B0TBV33ATMA1" H 8825 874 50  0000 C CNN
+F 2 "" H 8650 900 50  0001 C CNN
+F 3 "" H 8650 900 50  0001 C CNN
+	1    8650 900 
+	1    0    0    -1  
+$EndComp
+Text GLabel 7800 1100 0    50   Input ~ 0
+VCC
+$Comp
+L power:GND #PWR?
+U 1 1 5E4413EE
+P 9500 2300
+F 0 "#PWR?" H 9500 2050 50  0001 C CNN
+F 1 "GND" H 9505 2127 50  0000 C CNN
+F 2 "" H 9500 2300 50  0001 C CNN
+F 3 "" H 9500 2300 50  0001 C CNN
+	1    9500 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:CAP C
+U 1 1 5E430140
+P 9500 1550
+F 0 "C" H 9678 1596 50  0000 L CNN
+F 1 "100uF" H 9678 1505 50  0000 L CNN
+F 2 "" H 9500 1550 50  0001 C CNN
+F 3 "~" H 9500 1550 50  0001 C CNN
+	1    9500 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E442F97
+P 8850 1550
+F 0 "#PWR?" H 8850 1300 50  0001 C CNN
+F 1 "GND" H 8855 1377 50  0000 C CNN
+F 2 "" H 8850 1550 50  0001 C CNN
+F 3 "" H 8850 1550 50  0001 C CNN
+	1    8850 1550
+	1    0    0    -1  
+$EndComp
+Text GLabel 8400 1300 0    50   Input ~ 0
+EN
+Wire Wire Line
+	8400 1100 7950 1100
+Wire Wire Line
+	7950 1100 7800 1100
+Connection ~ 7950 1100
+Wire Wire Line
+	9500 1300 9250 1300
+Wire Wire Line
+	9850 1300 9500 1300
+Text GLabel 9850 1300 2    50   Input ~ 0
+3.3V
+Connection ~ 9500 1300
+Wire Wire Line
+	4550 8650 4550 8400
+Wire Wire Line
+	4550 8400 4200 8400
+Wire Wire Line
+	2250 8650 2250 8400
+Wire Wire Line
+	2650 8650 2650 8400
+Connection ~ 2650 8400
+Wire Wire Line
+	2650 8400 2250 8400
+Wire Wire Line
+	3050 8650 3050 8400
+Connection ~ 3050 8400
+Wire Wire Line
+	3050 8400 2650 8400
+Wire Wire Line
+	3450 8650 3450 8400
+Connection ~ 3450 8400
+Wire Wire Line
+	3450 8400 3050 8400
+Wire Wire Line
+	3800 8650 3800 8400
+Connection ~ 3800 8400
+Wire Wire Line
+	3800 8400 3450 8400
+Wire Wire Line
+	4200 8650 4200 8400
+Connection ~ 4200 8400
+Wire Wire Line
+	4200 8400 3800 8400
+Wire Wire Line
+	2250 8400 1900 8400
+Connection ~ 2250 8400
+Wire Wire Line
+	1900 8650 1900 8400
+$Comp
+L power:GND #PWR?
+U 1 1 5E511097
+P 1900 8400
+F 0 "#PWR?" H 1900 8150 50  0001 C CNN
+F 1 "GND" H 1905 8227 50  0000 C CNN
+F 2 "" H 1900 8400 50  0001 C CNN
+F 3 "" H 1900 8400 50  0001 C CNN
+	1    1900 8400
+	0    1    1    0   
+$EndComp
+Connection ~ 1900 8400
+$Comp
+L MCU_ST_STM32F4:STM32F427VGTx U?
+U 1 1 5E409285
+P 5400 3650
+F 0 "U?" H 5400 761 50  0000 C CNN
+F 1 "STM32F427VGTx" H 5400 670 50  0000 C CNN
+F 2 "Package_QFP:LQFP-100_14x14mm_P0.5mm" H 4700 1050 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00071990.pdf" H 5400 3650 50  0001 C CNN
+	1    5400 3650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2650 9150 2650 9300
+Wire Wire Line
+	2650 9300 3050 9300
+Connection ~ 2650 9300
+Wire Wire Line
+	1900 10250 2650 10250
+Wire Wire Line
+	2650 10250 2650 9300
+Wire Wire Line
+	1900 10150 2250 10150
+Wire Wire Line
+	2250 9300 2250 10150
+Wire Wire Line
+	2250 9300 2650 9300
+Connection ~ 2250 9300
+Wire Wire Line
+	2250 9150 2250 9300
+$Comp
+L pspice:CAP C?
+U 1 1 5E4F9238
+P 2650 8900
+F 0 "C?" H 2828 8946 50  0000 L CNN
+F 1 "100uF" H 2828 8855 50  0000 L CNN
+F 2 "" H 2650 8900 50  0001 C CNN
+F 3 "~" H 2650 8900 50  0001 C CNN
+	1    2650 8900
+	-1   0    0    1   
+$EndComp
+$Comp
+L pspice:CAP C?
+U 1 1 5E4F9232
+P 2250 8900
+F 0 "C?" H 2428 8946 50  0000 L CNN
+F 1 "100uF" H 2428 8855 50  0000 L CNN
+F 2 "" H 2250 8900 50  0001 C CNN
+F 3 "~" H 2250 8900 50  0001 C CNN
+	1    2250 8900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1900 9300 2250 9300
+Wire Wire Line
+	4550 10750 4550 9300
+Wire Wire Line
+	1900 10750 4550 10750
+Wire Wire Line
+	4200 10650 4200 9300
+Wire Wire Line
+	1900 10650 4200 10650
+Wire Wire Line
+	3800 10550 3800 9300
+Wire Wire Line
+	1900 10550 3800 10550
+Wire Wire Line
+	3450 10450 3450 9300
+Wire Wire Line
+	1900 10450 3450 10450
+Wire Wire Line
+	3050 10350 3050 9300
+Wire Wire Line
+	1900 10350 3050 10350
+Connection ~ 1900 9300
+Wire Wire Line
+	1900 9150 1900 9300
+Wire Wire Line
+	1000 9300 1000 9450
+Wire Wire Line
+	1000 9300 1900 9300
+Connection ~ 4550 9300
+Wire Wire Line
+	4550 9150 4550 9300
+Wire Wire Line
+	4200 9300 4550 9300
+Connection ~ 4200 9300
+Wire Wire Line
+	4200 9150 4200 9300
+Wire Wire Line
+	3800 9300 4200 9300
+Connection ~ 3800 9300
+Wire Wire Line
+	3800 9150 3800 9300
+Wire Wire Line
+	3450 9300 3800 9300
+Connection ~ 3450 9300
+Wire Wire Line
+	3450 9150 3450 9300
+Wire Wire Line
+	3050 9300 3450 9300
+Connection ~ 3050 9300
+Wire Wire Line
+	3050 9150 3050 9300
+$Comp
+L pspice:CAP C?
+U 1 1 5E4960FD
+P 1900 8900
+F 0 "C?" H 2078 8946 50  0000 L CNN
+F 1 "4.7uF" H 2078 8855 50  0000 L CNN
+F 2 "" H 1900 8900 50  0001 C CNN
+F 3 "~" H 1900 8900 50  0001 C CNN
+	1    1900 8900
+	-1   0    0    1   
+$EndComp
+$Comp
+L pspice:CAP C?
+U 1 1 5E448C11
+P 4200 8900
+F 0 "C?" H 4378 8946 50  0000 L CNN
+F 1 "100uF" H 4378 8855 50  0000 L CNN
+F 2 "" H 4200 8900 50  0001 C CNN
+F 3 "~" H 4200 8900 50  0001 C CNN
+	1    4200 8900
+	-1   0    0    1   
+$EndComp
+$Comp
+L pspice:CAP C?
+U 1 1 5E448DB9
+P 3800 8900
+F 0 "C?" H 3978 8946 50  0000 L CNN
+F 1 "100uF" H 3978 8855 50  0000 L CNN
+F 2 "" H 3800 8900 50  0001 C CNN
+F 3 "~" H 3800 8900 50  0001 C CNN
+	1    3800 8900
+	-1   0    0    1   
+$EndComp
+$Comp
+L pspice:CAP C?
+U 1 1 5E448FF7
+P 3450 8900
+F 0 "C?" H 3628 8946 50  0000 L CNN
+F 1 "100uF" H 3628 8855 50  0000 L CNN
+F 2 "" H 3450 8900 50  0001 C CNN
+F 3 "~" H 3450 8900 50  0001 C CNN
+	1    3450 8900
+	-1   0    0    1   
+$EndComp
+$Comp
+L pspice:CAP C?
+U 1 1 5E449186
+P 3050 8900
+F 0 "C?" H 3228 8946 50  0000 L CNN
+F 1 "100uF" H 3228 8855 50  0000 L CNN
+F 2 "" H 3050 8900 50  0001 C CNN
+F 3 "~" H 3050 8900 50  0001 C CNN
+	1    3050 8900
+	-1   0    0    1   
+$EndComp
+$Comp
+L pspice:CAP C?
+U 1 1 5E464F9A
+P 4550 8900
+F 0 "C?" H 4728 8946 50  0000 L CNN
+F 1 "100uF" H 4728 8855 50  0000 L CNN
+F 2 "" H 4550 8900 50  0001 C CNN
+F 3 "~" H 4550 8900 50  0001 C CNN
+	1    4550 8900
+	-1   0    0    1   
+$EndComp
+Text GLabel 1000 9300 1    50   Input ~ 0
+3.3V
+Wire Wire Line
+	1900 4550 1750 4550
+Wire Wire Line
+	1750 4550 1750 4650
+Wire Wire Line
+	1750 4950 1900 4950
+Wire Wire Line
+	1900 4850 1750 4850
+Connection ~ 1750 4850
+Wire Wire Line
+	1750 4850 1750 4950
+Wire Wire Line
+	1900 4750 1750 4750
+Connection ~ 1750 4750
+Wire Wire Line
+	1750 4750 1750 4850
+Wire Wire Line
+	1900 4650 1750 4650
+Connection ~ 1750 4650
+Wire Wire Line
+	1750 4650 1750 4750
+Wire Wire Line
+	1750 4350 1750 4550
+Connection ~ 1750 4550
+$Comp
+L power:GND #PWR?
+U 1 1 5E531999
+P 1750 4350
+F 0 "#PWR?" H 1750 4100 50  0001 C CNN
+F 1 "GND" H 1755 4177 50  0000 C CNN
+F 2 "" H 1750 4350 50  0001 C CNN
+F 3 "" H 1750 4350 50  0001 C CNN
+	1    1750 4350
+	-1   0    0    1   
+$EndComp
+$EndSCHEMATC
