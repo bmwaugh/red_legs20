@@ -510,4 +510,15 @@ F 3 "~" H 7300 1150 50  0001 C CNN
 	1    7300 1150
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:C C?
+U 1 1 5E45AEB2
+P 5950 8400
+F 0 "C?" H 6065 8446 50  0000 L CNN
+F 1 "C" H 6065 8355 50  0000 L CNN
+F 2 "" H 5988 8250 50  0001 C CNN
+F 3 "~" H 5950 8400 50  0001 C CNN
+	1    5950 8400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
