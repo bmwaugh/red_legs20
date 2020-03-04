@@ -16,12 +16,12 @@ $EndDescr
 $Comp
 L power:+BATT #PWR01
 U 1 1 5E5799C7
-P 2850 4500
-F 0 "#PWR01" H 2850 4350 50  0001 C CNN
-F 1 "+BATT" H 2865 4673 50  0000 C CNN
-F 2 "" H 2850 4500 50  0001 C CNN
-F 3 "" H 2850 4500 50  0001 C CNN
-	1    2850 4500
+P 6350 2750
+F 0 "#PWR01" H 6350 2600 50  0001 C CNN
+F 1 "+BATT" H 6365 2923 50  0000 C CNN
+F 2 "" H 6350 2750 50  0001 C CNN
+F 3 "" H 6350 2750 50  0001 C CNN
+	1    6350 2750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -400,17 +400,6 @@ F 3 "https://www.digikey.com/product-detail/en/on-semiconductor/MC7805BDTRKG/MC7
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+BATT #PWR02
-U 1 1 5E69F174
-P 2900 3000
-F 0 "#PWR02" H 2900 2850 50  0001 C CNN
-F 1 "+BATT" H 2915 3173 50  0000 C CNN
-F 2 "" H 2900 3000 50  0001 C CNN
-F 3 "" H 2900 3000 50  0001 C CNN
-	1    2900 3000
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR03
 U 1 1 5E69F57F
 P 3200 3300
@@ -593,19 +582,52 @@ $EndComp
 $Comp
 L Device:Fuse F0
 U 1 1 5E62ADF2
-P 2850 4800
-F 0 "F0" H 2650 4850 50  0000 L CNN
-F 1 "Fuse" H 2650 4750 50  0000 L CNN
-F 2 "Fuse:Fuseholder_Blade_Mini_Keystone_3568" V 2780 4800 50  0001 C CNN
-F 3 "https://www.digikey.com/product-detail/en/keystone-electronics/3568/36-3568-ND/2137306" H 2850 4800 50  0001 C CNN
-	1    2850 4800
+P 6350 3050
+F 0 "F0" H 6150 3100 50  0000 L CNN
+F 1 "Fuse" H 6150 3000 50  0000 L CNN
+F 2 "Fuse:Fuseholder_Blade_Mini_Keystone_3568" V 6280 3050 50  0001 C CNN
+F 3 "https://www.digikey.com/product-detail/en/keystone-electronics/3568/36-3568-ND/2137306" H 6350 3050 50  0001 C CNN
+	1    6350 3050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2850 4500 2850 4650
-Wire Wire Line
-	2850 4950 2850 5050
+	6350 2750 6350 2900
 Wire Wire Line
 	2850 5050 3250 5050
 Connection ~ 3250 5050
+$Comp
+L power:VCC #PWR?
+U 1 1 5E634276
+P 2900 3000
+F 0 "#PWR?" H 2900 2850 50  0001 C CNN
+F 1 "VCC" H 2917 3173 50  0000 C CNN
+F 2 "" H 2900 3000 50  0001 C CNN
+F 3 "" H 2900 3000 50  0001 C CNN
+	1    2900 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5E6375DE
+P 6350 3200
+F 0 "#PWR?" H 6350 3050 50  0001 C CNN
+F 1 "VCC" H 6368 3373 50  0000 C CNN
+F 2 "" H 6350 3200 50  0001 C CNN
+F 3 "" H 6350 3200 50  0001 C CNN
+	1    6350 3200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5E63822D
+P 2850 4500
+F 0 "#PWR?" H 2850 4350 50  0001 C CNN
+F 1 "VCC" H 2867 4673 50  0000 C CNN
+F 2 "" H 2850 4500 50  0001 C CNN
+F 3 "" H 2850 4500 50  0001 C CNN
+	1    2850 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 4500 2850 5050
 $EndSCHEMATC
