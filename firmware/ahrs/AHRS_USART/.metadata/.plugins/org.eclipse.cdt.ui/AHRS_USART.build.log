@@ -1,0 +1,11 @@
+11:52:29 **** Incremental Build of configuration Debug for project AHRS_USART ****
+make -j2 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F429xx -c -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Core/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "AHRS_USART.elf" @"objects.list"   -mcpu=cortex-m4 -T"\\MAC\Home\Desktop\MQP\red_legs20\firmware\ahrs\AHRS_USART\AHRS_USART\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="AHRS_USART.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\st\stm32cubeide_1.3.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.7-2018-q2-update.win32_1.0.0.201904181610\tools\arm-none-eabi\bin\ld.exe: cannot open linker script file \MAC\Home\Desktop\MQP\red_legs20\firmware\ahrs\AHRS_USART\AHRS_USART\STM32F429ZITX_FLASH.ld: No such file or directory
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:44: AHRS_USART.elf] Error 1
+"make -j2 all" terminated with exit code 2. Build might be incomplete.
+
+11:52:42 Build Failed. 1 errors, 0 warnings. (took 13s.453ms)
+
