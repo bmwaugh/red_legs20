@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;AHRS_UART/Release/AHRS_UART.elf&apos;" deleteContents="false" description="Delete resource &apos;AHRS_UART/Release/AHRS_UART.elf&apos;" element1="/AHRS_UART/Release/AHRS_UART.elf" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1586160564166"/>
+</session>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;AHRS_UART/Debug/objects.list.list&apos; to &apos;objects.list&apos;" description="Rename resource &apos;objects.list.list&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Debug/objects.list.list" name="objects.list" stamp="1586066236134" updateReferences="true"/>
+</session>
