@@ -5,6 +5,7 @@
 #include <fcntl.h>   // File control definitions
 #include <errno.h>   // Error number definitions
 #include <termios.h> // POSIX terminal control definitions
+
 /*
   Found sample code from:
       https://www.cmrr.umn.edu/~strupp/serial.html
@@ -75,7 +76,8 @@ int main()
     //baudrate 115200, 8 bits, no parity, 1 stop bit
     set_interface_attribs(fd, B115200);
 
-    do {
+    while (1)
+    {
         unsigned char buf[90];
         uint32_t xaccel, yaccel, zaccel, xgyro, ygyro, zgyro;
         int rdlen;
@@ -123,5 +125,5 @@ int main()
             printf("Timeout from read\n");
         }
         // repeat read to get full message
-    } while (1);
+    }
 }

@@ -1,0 +1,10 @@
+03:16:58 **** Incremental Build of configuration Debug for project AHRS_UART ****
+make -j3 all 
+arm-none-eabi-size   AHRS_UART.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32008	    492	   8300	  40800	   9f60	AHRS_UART.elf
+Finished building: default.size.stdout
+ 
+
+03:16:58 Build Finished. 0 errors, 0 warnings. (took 134ms)
+
