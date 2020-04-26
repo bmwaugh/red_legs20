@@ -62,7 +62,8 @@ float hexToFloat(num) {
 int main()
 {
     printf("A\n");
-    char *portname = "/dev/tty.usbmodem14201";
+    //char *portname = "/dev/tty.usbmodem14201";
+    char *portname = "/dev/tty.usbmodem14101";
     int fd;
     int index;
     printf("B\n");
@@ -90,36 +91,36 @@ int main()
 
         //if read length is greater than 0, display the hex output
         if (rdlen > 0) {
-        // display hex
-            // unsigned char   *p;
-            // printf("\nRead %d:\n", rdlen);
-            // for (p = buf; index-- > 0; p++) {
-            //   printf(" 0x%x'", *p); //print hex
-            //   //printf("%c", *p); //print characters
-            // }
-            // printf("\n");
+        //display hex
+            unsigned char *p;
+            printf("\nRead %d:\n", rdlen);
+            for (p = buf; index-- > 0; p++) {
+              printf(" 0x%x'", *p); //print hex
+              //printf("%c", *p); //print characters
+            }
+            printf("\n");
 
         // if it reads all 90 bytes, then format into appropriate values
-          if (rdlen == 90) {
-            xaccel = (buf[6]<<24) | (buf[7]<<16)| (buf[8]<<8) | buf[9];
-            yaccel = (buf[10]<<24) | (buf[11]<<16)| (buf[12]<<8) | buf[13];
-            zaccel = (buf[14]<<24) | (buf[15]<<16)| (buf[16]<<8) | buf[17];
-            xgyro = (buf[19]<<24) | (buf[20]<<16)| (buf[21]<<8) | buf[22];
-            ygyro = (buf[23]<<24) | (buf[24]<<16)| (buf[25]<<8) | buf[26];
-            zgyro = (buf[27]<<24) | (buf[28]<<16)| (buf[29]<<8) | buf[30];
-            printf("Xaccel:\n");
-            hexToFloat(xaccel);
-            printf("Yaccel:\n");
-            hexToFloat(yaccel);
-            printf("Zaccel:\n");
-            hexToFloat(zaccel);
-            printf("Xgyro:\n");
-            hexToFloat(xgyro);
-            printf("Ygyro:\n");
-            hexToFloat(ygyro);
-            printf("Zgyro:\n");
-            hexToFloat(zgyro);
-          }
+          // if (rdlen == 90) {
+          //   xaccel = (buf[6]<<24) | (buf[7]<<16)| (buf[8]<<8) | buf[9];
+          //   yaccel = (buf[10]<<24) | (buf[11]<<16)| (buf[12]<<8) | buf[13];
+          //   zaccel = (buf[14]<<24) | (buf[15]<<16)| (buf[16]<<8) | buf[17];
+          //   xgyro = (buf[19]<<24) | (buf[20]<<16)| (buf[21]<<8) | buf[22];
+          //   ygyro = (buf[23]<<24) | (buf[24]<<16)| (buf[25]<<8) | buf[26];
+          //   zgyro = (buf[27]<<24) | (buf[28]<<16)| (buf[29]<<8) | buf[30];
+          //   printf("Xaccel:\n");
+          //   hexToFloat(xaccel);
+          //   printf("Yaccel:\n");
+          //   hexToFloat(yaccel);
+          //   printf("Zaccel:\n");
+          //   hexToFloat(zaccel);
+          //   printf("Xgyro:\n");
+          //   hexToFloat(xgyro);
+          //   printf("Ygyro:\n");
+          //   hexToFloat(ygyro);
+          //   printf("Zgyro:\n");
+          //   hexToFloat(zgyro);
+          // }
 
         } else if (rdlen == 0) {
             printf("Timeout from read\n");

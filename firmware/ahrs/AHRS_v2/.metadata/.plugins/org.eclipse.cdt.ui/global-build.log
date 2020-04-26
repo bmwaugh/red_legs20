@@ -1,84 +1,21 @@
-03:12:03 **** Incremental Build of configuration Debug for project AHRS_UART ****
+04:32:07 **** Incremental Build of configuration Debug for project AHRS_UART ****
 make -j3 all 
 arm-none-eabi-size   AHRS_UART.elf 
    text	   data	    bss	    dec	    hex	filename
-  32008	    492	   8300	  40800	   9f60	AHRS_UART.elf
+  31656	    492	   8300	  40448	   9e00	AHRS_UART.elf
 Finished building: default.size.stdout
  
-03:12:10 **** Incremental Build of configuration Debug for project AHRS_UART ****
+04:32:16 **** Incremental Build of configuration Debug for project AHRS_UART ****
 make -j3 all 
 arm-none-eabi-size   AHRS_UART.elf 
    text	   data	    bss	    dec	    hex	filename
-  32008	    492	   8300	  40800	   9f60	AHRS_UART.elf
+  31656	    492	   8300	  40448	   9e00	AHRS_UART.elf
 Finished building: default.size.stdout
  
-03:13:11 **** Incremental Build of configuration Debug for project AHRS_UART ****
+04:40:16 **** Incremental Build of configuration Debug for project AHRS_UART ****
 make -j3 all 
 arm-none-eabi-size   AHRS_UART.elf 
    text	   data	    bss	    dec	    hex	filename
-  32008	    492	   8300	  40800	   9f60	AHRS_UART.elf
-Finished building: default.size.stdout
- 
-03:13:54 **** Incremental Build of configuration Debug for project AHRS_UART ****
-make -j3 all 
-arm-none-eabi-size   AHRS_UART.elf 
-   text	   data	    bss	    dec	    hex	filename
-  32008	    492	   8300	  40800	   9f60	AHRS_UART.elf
-Finished building: default.size.stdout
- 
-03:14:02 **** Incremental Build of configuration Debug for project AHRS_UART ****
-make -j3 all 
-arm-none-eabi-size   AHRS_UART.elf 
-   text	   data	    bss	    dec	    hex	filename
-  32008	    492	   8300	  40800	   9f60	AHRS_UART.elf
-Finished building: default.size.stdout
- 
-03:14:03 **** Incremental Build of configuration Debug for project AHRS_UART ****
-make -j3 all 
-arm-none-eabi-size   AHRS_UART.elf 
-   text	   data	    bss	    dec	    hex	filename
-  32008	    492	   8300	  40800	   9f60	AHRS_UART.elf
-Finished building: default.size.stdout
- 
-03:14:04 **** Incremental Build of configuration Debug for project AHRS_UART ****
-make -j3 all 
-arm-none-eabi-size   AHRS_UART.elf 
-   text	   data	    bss	    dec	    hex	filename
-  32008	    492	   8300	  40800	   9f60	AHRS_UART.elf
-Finished building: default.size.stdout
- 
-03:14:25 **** Incremental Build of configuration Debug for project AHRS_UART ****
-make -j3 all 
-arm-none-eabi-size   AHRS_UART.elf 
-   text	   data	    bss	    dec	    hex	filename
-  32008	    492	   8300	  40800	   9f60	AHRS_UART.elf
-Finished building: default.size.stdout
- 
-03:15:07 **** Incremental Build of configuration Debug for project AHRS_UART ****
-make -j3 all 
-arm-none-eabi-size   AHRS_UART.elf 
-   text	   data	    bss	    dec	    hex	filename
-  32008	    492	   8300	  40800	   9f60	AHRS_UART.elf
-Finished building: default.size.stdout
- 
-03:16:03 **** Incremental Build of configuration Debug for project AHRS_UART ****
-make -j3 all 
-arm-none-eabi-size   AHRS_UART.elf 
-   text	   data	    bss	    dec	    hex	filename
-  32008	    492	   8300	  40800	   9f60	AHRS_UART.elf
-Finished building: default.size.stdout
- 
-03:16:50 **** Incremental Build of configuration Debug for project AHRS_UART ****
-make -j3 all 
-arm-none-eabi-size   AHRS_UART.elf 
-   text	   data	    bss	    dec	    hex	filename
-  32008	    492	   8300	  40800	   9f60	AHRS_UART.elf
-Finished building: default.size.stdout
- 
-03:16:58 **** Incremental Build of configuration Debug for project AHRS_UART ****
-make -j3 all 
-arm-none-eabi-size   AHRS_UART.elf 
-   text	   data	    bss	    dec	    hex	filename
-  32008	    492	   8300	  40800	   9f60	AHRS_UART.elf
+  31656	    492	   8300	  40448	   9e00	AHRS_UART.elf
 Finished building: default.size.stdout
  
